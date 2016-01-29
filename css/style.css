@@ -1,4 +1,4 @@
-div, section, article, nav, aside, main, h1, ul {
+div, section, article, nav, aside, main, h1, ul, img {
 	outline: 1px solid green;
 }
 
@@ -157,8 +157,41 @@ h2 {
 	margin-right: 0;
 }
 
-
-
 .pages {
 	margin-bottom: 45px;
+}
+
+/* карточка товара*/
+
+.item-photo {
+	float: left;
+	width: 460px;
+	font-size: 0;
+	line-height: 0;
+	margin-bottom: 50px;
+}
+
+.item-photo .item-preview {
+	width: 140px;
+	margin-right: 20px;
+}
+
+.item-photo .item-preview:nth-child(3n) {
+	margin-right: 0;
+}
+
+.item-info {
+	float: right;
+	width: 380px;
+	padding: 0 10px;
+	margin-bottom: 50px;
+	margin-bottom: 50px;
+}
+
+.item-params .available {
+	float: left;
+}
+
+.item-params .product-code {
+	float: right;
 }
