@@ -1,4 +1,11 @@
-.clearfix::after{
+div, section, article, nav, aside, main, h1, ul {
+	outline: 1px solid green;
+}
+
+.clearfix::before,
+.clearfix::after,
+.container::before,
+.container::after {
     content:'';
     display:table;
     clear:both;
@@ -29,13 +36,10 @@ h2 {
 
 .main-header {
 	margin-bottom: 60px;
-	
 }
 
 .main-navigation {
-	float: left;
-	width: 780px;
-	
+	overflow: hidden;
 }
 
 .user-block {
@@ -43,45 +47,7 @@ h2 {
 	width: 140px;
 }
 
-.index-logo {
-	width: 368px;
-	height: 204px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 25px;
-}
-
-.features {
-	margin-bottom: 80px;
-}
-
-.features-item {
-	float: left;
-	width: 300px;
-	margin-right: 20px;
-}
-
-.features-item:last-child {
-	margin-right: 0;
-}
-
-.index-content {
-	padding: 50px 80px;
-	margin-bottom: 35px;
-}
-
-.index-content-left {
-	float: left;
-	width: 380px;
-}
-
-.index-content-right {
-	float: right;
-	width: 300px;
-}
-
 .main-footer {
-	margin-top: 65px;
 	padding-top: 60px;
 	padding-bottom: 40px;
 }
@@ -102,7 +68,97 @@ h2 {
 	width: 180px;
 }
 
-div, section {
-	outline: 1px solid green;
+/* главная */
+
+.index-logo {
+	width: 368px;
+	height: 204px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 25px;
 }
 
+.features {
+	margin-bottom: 80px;
+}
+
+.features-item {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+}
+
+.features-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.index-content {
+	padding: 50px 80px;
+	margin-bottom: 35px;
+}
+
+.index-content:last-child {
+	margin-bottom: 65px;
+}
+
+.index-content-left {
+	float: left;
+	width: 380px;
+}
+
+.index-content-right {
+	float: right;
+	width: 300px;
+}
+
+/* внутренние страницы*/
+
+.header-logo {
+	float: left;
+	width: 111px;
+	height: 24px;
+}
+
+.main-title {
+	margin-bottom: 25px;
+}
+
+.breadcrumbs {
+	margin-bottom: 60px;
+}
+
+/* каталог */
+
+.shop-content-main {
+	float: right;
+	width: 700px;
+}
+
+.shop-content-left {
+	float: left;
+	width: 220px;
+}
+
+.product-list {
+	margin-bottom: 45px;
+	font-size: 0;
+}
+
+.product {
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+	min-height: 285px;
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+.product:nth-child(3n) {
+	margin-right: 20px;
+}
+
+
+
+.pages {
+	margin-bottom: 45px;
+}

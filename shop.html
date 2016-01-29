@@ -11,6 +11,9 @@
 				<a href="" class="header-logo">
 					<img src="img/logo.png" alt="barbershop" width="111" height="24">
 				</a>
+				<div class="user-block">
+					<a href="#" class="login">Вход</a>
+				</div>
 				<nav class="main-navigation">
 					<ul>
 						<li>
@@ -30,9 +33,6 @@
 						</li>						
 					</ul>
 				</nav>
-				<div class="user-block">
-					<a href="#" class="login">Вход</a>
-				</div>
 			</div>
 		</header>
 		<main class="container">
@@ -45,33 +45,10 @@
 					<a href="#">магазин</a>
 				</li>
 				<li>
-					<a href="#" class="disabled">средства для ухода</a>
+					<span>средства для ухода</span>
 				</li>
 			</ul>
-			<div class="shop-content">
-				<div class="shop-content-left">
-					<form class="filter" action="https://echo.htmlacademy.ru" method="post">
-						<fieldset class="filter-block">
-							<legend>Производители:</legend>
-							<input type="checkbox" id="baxter-of-california" name="producers" value="baxter-of-california" checked>
-							<label for="baxter-of-california">baxter of california</label>
-							<input type="checkbox" id="mr-natty" name="producers" value="mr-natty">
-							<label for="mr-natty">mr natty</label>
-							<input type="checkbox" id="suavecito"  name="producers" value="suavecito" checked>
-							<label for="suavecito">suavecito</label>
-							<input type="checkbox" id="malin-goetz"  name="producers" value="malin-goetz">
-							<label for="malin-goetz">malin-goetz</label>
-							<input type="checkbox" id="murrays"  name="producers" value="murrays">
-							<label for="murrays">murray's</label>
-							<input type="checkbox" id="american-crew"  name="producers"  value="american-crew" checked>
-							<label for="american-crew">american crew</label>
-						</fieldset>
-						<fieldset class="group-block">
-							<legend>Группы товаров:</legend>
-						</fieldset>
-						<button class="btn" type="submit">показать</button>
-					</form>
-				</div>
+			<div class="shop-content clearfix">
 				<div class="shop-content-main">
 					<section class="product-list">
 						<article class="product">
@@ -167,6 +144,29 @@
 							<a href="#">4</a>
 						</li>
 					</ul>
+				</div>
+				<div class="shop-content-left">
+					<form class="filter" action="https://echo.htmlacademy.ru" method="post">
+						<fieldset class="filter-block">
+							<legend>Производители:</legend>
+							<input type="checkbox" id="baxter-of-california" name="producers" value="baxter-of-california" checked>
+							<label for="baxter-of-california">baxter of california</label>
+							<input type="checkbox" id="mr-natty" name="producers" value="mr-natty">
+							<label for="mr-natty">mr natty</label>
+							<input type="checkbox" id="suavecito"  name="producers" value="suavecito" checked>
+							<label for="suavecito">suavecito</label>
+							<input type="checkbox" id="malin-goetz"  name="producers" value="malin-goetz">
+							<label for="malin-goetz">malin-goetz</label>
+							<input type="checkbox" id="murrays"  name="producers" value="murrays">
+							<label for="murrays">murray's</label>
+							<input type="checkbox" id="american-crew"  name="producers"  value="american-crew" checked>
+							<label for="american-crew">american crew</label>
+						</fieldset>
+						<fieldset class="group-block">
+							<legend>Группы товаров:</legend>
+						</fieldset>
+						<button class="btn" type="submit">показать</button>
+					</form>
 				</div>
 			</div>
 		</main>
