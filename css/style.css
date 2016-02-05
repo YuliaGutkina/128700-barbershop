@@ -11,6 +11,60 @@
     clear:both;
 }
 
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-checked {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -10px;
+}
+
+.sprite-fb {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -42px;
+}
+
+.sprite-fb-copy {
+    width: 12px;
+    height: 22px;
+    background-position: -5px -79px;
+}
+
+.sprite-inst {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -116px;
+}
+
+.sprite-inst-copy {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -152px;
+}
+
+.sprite-login {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -188px;
+}
+
+.sprite-vk {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -224px;
+}
+
+.sprite-vk-copy {
+    width: 25px;
+    height: 16px;
+    background-position: -5px -255px;
+}
+
 body {
 	min-width: 960px;
 	
@@ -110,9 +164,9 @@ h2 {
 	left: 28px;
 	
 	width: 18px;
-	height: 18px;
+	height: 16px;
 	
-	background: transparent url("../img/icon-login.png") no-repeat;
+	background: transparent url("../img/spritesheet.png") no-repeat -10px -188px;
 	opacity: 0.3;
 }
 
@@ -180,6 +234,7 @@ h2 {
 }
 
 .social-btn {
+	position: relative;
 	display: inline-block;
 	width: 43px;
 	height: 43px;
@@ -189,11 +244,59 @@ h2 {
 	vertical-align: top;
 	text-decoration: none;
 
-	background: #000000 url("img/sprite.png") no-repeat center;
+	background: #000000;
 }
 
 .social-btn:hover {
 	background-color: #ffffff;
+}
+
+.social-btn::before {
+	content: '';
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	transform: translate(-50%, -50%);
+	background-image: url("../img/spritesheet.png");
+	background-repeat: no-repeat;
+}
+
+.social-btn-vk::before {
+	width: 25px;
+    height: 16px;
+    background-position: -10px -224px;
+}
+
+.social-btn-fb::before {
+	width: 12px;
+    height: 22px;
+    background-position: -10px -42px;
+}
+
+.social-btn-inst::before {
+	width: 21px;
+    height: 21px;
+    background-position: -10px -116px;
+}
+
+.social-btn-vk:hover::before{
+	width: 25px;
+    height: 16px;
+    background-position: -5px -255px;
+}
+
+.social-btn-fb:hover::before {
+	width: 12px;
+    height: 22px;
+    background-position: -5px -79px;
+}
+
+.social-btn-inst:hover::before {
+	width: 21px;
+    height: 21px;
+    background-position: -5px -152px;
 }
 
 .btn {
