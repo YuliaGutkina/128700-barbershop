@@ -1,6 +1,6 @@
-/* div, section, article, nav, aside, main, h1, ul, img {
+/*  div, section, article, nav, aside, main, h1, ul, img {
 	outline: 1px solid green;
-} */
+}  */
 
 .clearfix::before,
 .clearfix::after,
@@ -627,6 +627,8 @@ h2 {
 
 .product-photo {
 	margin-bottom: 15px;
+	
+	line-height: 0;
 }
 
 .product-name {
@@ -650,7 +652,11 @@ h2 {
 }
 
 .product-sale {
-	margin: 15px;
+	width: 190px;
+}
+
+.product .product-sale {
+	margin: 15px auto;
 }
 
 .product-price {
@@ -774,14 +780,25 @@ h2 {
 .item-photo {
 	float: left;
 	width: 460px;
+	margin-bottom: 50px;
+	
 	font-size: 0;
 	line-height: 0;
-	margin-bottom: 50px;
+}
+
+.item-photo .item-big {
+	margin-bottom: 20px;
+
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .item-photo .item-preview {
 	width: 140px;
 	margin-right: 20px;
+	
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	
+	cursor: pointer;
 }
 
 .item-photo .item-preview:nth-child(3n) {
@@ -796,10 +813,59 @@ h2 {
 	margin-bottom: 50px;
 }
 
+.item-params  {
+	margin-bottom: 35px;
+}
+
 .item-params .available {
 	float: left;
 }
 
 .item-params .product-code {
 	float: right;
+	
+	color: #aeaeae;
+}
+
+.item-info p {
+	margin-bottom: 35px;
+}
+
+.item-info .product-sale {
+	margin-bottom: 60px;
+}
+
+.info-list-title {
+	margin: 0;
+	margin-bottom: 35px;
+	
+	font-size: 24px;
+}
+
+.info-list {
+	margin: 0;
+	padding: 0;
+		
+	list-style: none;
+}
+
+.info-list li {
+	position: relative;
+	margin-bottom: 8px;
+	padding-left: 20px;
+
+	line-height: 18px;
+}
+
+.info-list li::before {
+	content: '';
+	
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 8px;
+	height: 8px;
+	
+	background: #000000;
+	transform: rotate(45deg);
 }
