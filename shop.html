@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="main-header">
 			<div class="container">
 				<a href="" class="header-logo">
@@ -41,13 +41,13 @@
 			<h1 class="main-title">Средства для ухода</h1>
 			<ul class="breadcrumbs">
 				<li>
-					<a href="#">главная</a>
+					<a href="#" class="crumb">главная</a>
 				</li>
 				<li>
-					<a href="#">магазин</a>
+					<a href="#" class="crumb">магазин</a>
 				</li>
 				<li>
-					<span>средства для ухода</span>
+					<span class="crumb disabled-crumb">средства для ухода</span>
 				</li>
 			</ul>
 			<div class="shop-content clearfix">
@@ -58,12 +58,12 @@
 								<img src="img/product1.jpg" alt="" width="220" height="165">
 							</a>
 							<a class="product-name" href="item.html">
-								Набор для путешествий 
+								<span class="type">Набор для путешествий</span> 
 								<span class="brand">«Baxter of California»</span>
 							</a>
-							<div class="product-sale">
-								<span class="product-price">2 900 руб.</span>
+							<div class="product-sale clearfix">
 								<a href="#" class="btn product-btn">купить</a>
+								<span class="product-price">2 900 руб.</span>
 							</div>
 						</article>
 						<article class="product">
@@ -71,12 +71,12 @@
 								<img src="img/product2.jpg" alt="" width="220" height="165">
 							</a>
 							<a class="product-name" href="item.html">
-								Увлажняющий кондиционер 
+								<span class="type">Увлажняющий кондиционер</span> 
 								<span class="brand">«Baxter of California»</span>
 							</a>
-							<div class="product-sale">
-								<span class="product-price">750 руб.</span>
+							<div class="product-sale clearfix">
 								<a href="#" class="btn product-btn">купить</a>
+								<span class="product-price">750 руб.</span>
 							</div>
 						</article>
 						<article class="product">
@@ -84,12 +84,13 @@
 								<img src="img/product3.jpg" alt="" width="220" height="165">
 							</a>
 							<a class="product-name" href="item.html">
-								Гель для волос 
+								<span class="type">Гель для волос</span> 
 								<span class="brand">«SUAVECITO»</span>
 							</a>
-							<div class="product-sale">
-								<span class="product-price">290 руб.</span>
+							<div class="product-sale clearfix">
 								<a href="#" class="btn product-btn">купить</a>
+								<span class="product-price">290 руб.</span>
+
 							</div>
 						</article>
 						<article class="product">
@@ -97,12 +98,12 @@
 								<img src="img/product4.jpg" alt="" width="220" height="165">
 							</a>
 							<a class="product-name" href="item.html">
-								Глина для укладки волос 
+								<span class="type">Глина для укладки волос</span> 
 								<span class="brand">«American crew»</span>
 							</a>
-							<div class="product-sale">
-								<span class="product-price">500 руб.</span>
+							<div class="product-sale clearfix">
 								<a href="#" class="btn product-btn">купить</a>
+								<span class="product-price">500 руб.</span>
 							</div>
 						</article>
 						<article class="product">
@@ -110,12 +111,12 @@
 								<img src="img/product5.jpg" alt="" width="220" height="165">
 							</a>
 							<a class="product-name" href="item.html">
-								Гель для волос 
+								<span class="type">Гель для волос</span> 
 								<span class="brand">«American crew»</span>
 							</a>
-							<div class="product-sale">
-								<span class="product-price">300 руб.</span>
+							<div class="product-sale clearfix">
 								<a href="#" class="btn product-btn">купить</a>
+								<span class="product-price">300 руб.</span>
 							</div>
 						</article>
 						<article class="product">
@@ -123,12 +124,12 @@
 								<img src="img/product6.jpg" alt="" width="220" height="165">
 							</a>
 							<a class="product-name" href="item.html">
-								Набор для бритья 
+								<span class="type">Набор для бритья</span> 
 								<span class="brand">«Baxter of California»</span>
 							</a>
-							<div class="product-sale">
-								<span class="product-price">3 900 руб.</span>
+							<div class="product-sale clearfix">
 								<a href="#" class="btn product-btn">купить</a>
+								<span class="product-price">3 900 руб.</span>
 							</div>
 						</article>
 					</section>
@@ -136,10 +137,10 @@
 						<li class="page">
 							<a href="#">1</a>
 						</li>
-						<li class="page">
+						<li class="page active">
 							<a href="#">2</a>
 						</li>
-						<li class="page active">
+						<li class="page">
 							<a href="#">3</a>
 						</li>
 						<li class="page">
@@ -149,7 +150,7 @@
 				</div>
 				<div class="shop-content-left">
 					<form class="filter" action="https://echo.htmlacademy.ru" method="post">
-						<fieldset class="filter-block">
+						<fieldset class="form-block filter-block">
 							<legend>Производители:</legend>
 							<input type="checkbox" id="baxter-of-california" name="producers" value="baxter-of-california" checked>
 							<label for="baxter-of-california">baxter of california</label>
@@ -164,7 +165,7 @@
 							<input type="checkbox" id="american-crew"  name="producers"  value="american-crew" checked>
 							<label for="american-crew">american crew</label>
 						</fieldset>
-						<fieldset class="group-block">
+						<fieldset class="form-block group-block">
 							<legend>Группы товаров:</legend>
 						</fieldset>
 						<button class="btn" type="submit">показать</button>
