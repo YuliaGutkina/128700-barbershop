@@ -78,11 +78,6 @@ body {
 	background: #000000;
 }
 
-h1,
-h2 {
-	
-}
-
 .container {
 	width: 940px;
 	margin: 0 auto;
@@ -90,7 +85,7 @@ h2 {
 }
 
 .main-header {
-	margin-bottom: 60px;
+	margin-bottom: 55px;
 	
 	color: #ffffff;
   
@@ -336,6 +331,10 @@ h2 {
 
 .main-page {
 	background: #000000 url(../img/bg.jpg) no-repeat center top;
+}
+
+.main-page .main-header {
+	margin-bottom: 60px;
 }
 
 .index-logo {
