@@ -1048,7 +1048,7 @@ margin-top: 30px;
   left: 50%;
   z-index: 20;
 
-  display: block;
+  display: none;
   width: 766px;
   height: 561px;
   margin-top: -280px;
