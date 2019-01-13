@@ -1,4 +1,4 @@
-# Study project "Barbershop"
+# Project "Barbershop"
 
 ---
 
